@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>قسم الإرشاد السياحي – كلية الآداب</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <div class="logo-ar">إرشاد سياحي</div>
+        <div class="logo-sub">كلية الآداب</div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sites">مصادر الدراسة</a></li>
+        <li><a href="#training">التدريبات</a></li>
+        <li><a href="#careers">مسارات العمل</a></li>
+        <li><a href="#curriculum-detailed">ماذا ستدرس</a></li>
+        <li><a href="#about">عن القسم</a></li>
+        <li><a href="#hero">الرئيسية</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="تبديل الوضع">🌙</button>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-parallax" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">كلية الآداب — قسم الإرشاد السياحي</p>
+      <h1 class="hero-title">اكتشف عالم<br/>الإرشاد السياحي</h1>
+      <p class="hero-desc">قسم الإرشاد السياحي بكلية الآداب — حيث تلتقي الحضارة بالمهنة.<br/>نُعدّك لتكون سفيراً للتراث المصري أمام العالم.</p>
+      <div class="hero-btns">
+        <a href="#new-students" class="btn btn-gold">للطلاب الجدد</a>
+        <a href="#sites" class="btn btn-outline">للطلاب الحاليين</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>اكتشف أكثر</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num" data-target="4">0</span>
+        <span class="stat-unit">سنوات</span>
+        <span class="stat-label">دراسة متكاملة</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="4">0</span>
+        <span class="stat-unit">لغات</span>
+        <span class="stat-label">أجنبية معتمدة</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="20">0</span>
+        <span class="stat-unit">+</span>
+        <span class="stat-label">فرصة تدريبية</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="100">0</span>
+        <span class="stat-unit">+</span>
+        <span class="stat-label">موقع أثري</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-hero-banner">
+      <div class="about-hero-bg"></div>
+      <div class="about-hero-overlay"></div>
+      <div class="about-hero-text">
+        <p class="eyebrow-light">كلية الآداب — للطلاب الجدد</p>
+        <h2 class="banner-title">نبذة عن قسم الإرشاد السياحي</h2>
+        <p class="banner-sub">أكثر من مجرد دراسة — رحلة لبناء شخصية سفير للحضارة المصرية أمام العالم.</p>
+      </div>
+    </div>
+
+    <div class="about-body">
+      <div class="about-images reveal">
+        <div class="about-img-main">
+          <img src="https://i.postimg.cc/Dz9YzPdL/Whats-App-Image-2026-06-16-at-6-26-00-AM.jpg" alt="الحضارة المصرية القديمة" loading="lazy"/>
+          <span class="img-caption">الحضارة المصرية القديمة</span>
+        </div>
+        <div class="about-img-row">
+          <div class="about-img-sm">
+            <img src="https://i.postimg.cc/BQz5sQC2/Whats-App-Image-2026-06-16-at-7-09-36-AM.jpg" alt="معبد الكرنك" loading="lazy"/>
+            <span class="img-caption">معبد الكرنك</span>
+          </div>
+          <div class="about-img-sm">
+            <img src="https://i.postimg.cc/J7qPwLgq/Whats-App-Image-2026-06-16-at-6-26-49-AM-(2).jpg" alt="الآثار الإسلامية" loading="lazy"/>
+            <span class="img-caption">الآثار الإسلامية</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="about-eyebrow">من نحن</p>
+        <h3 class="about-heading">نبذة عن القسم</h3>
+        <p>يُعدّ قسم الإرشاد السياحي من الأقسام التي تجمع بين المعرفة التاريخية والثقافية والمهارات الشخصية؛ فهو لا يقتصر فقط على إعداد مرشد سياحي قادر على شرح المعلومات، بل يهدف إلى تكوين شخصية واعية وقادرة على تحمل المسؤولية والتعامل مع مختلف الشخصيات والثقافات.</p>
+        <p>يساعد القسم الطالب على اكتساب مهارات اللغة بالنص، والقيادة، والإلقاء، وحسن التواصل، فيصبح شخصاً يُمكن الاعتماد عليه وقادراً على تمثيل صورة مشرقة لبلده أمام العالم.</p>
+        <p>يدرس الطالب خلال سنوات الدراسة حضارات مصر المختلفة، بداية من الحضارة المصرية القديمة، مروراً بالعصر البيزنطي الروماني، ثم القبطي والإسلامي، وصولاً إلى التاريخ الحديث.</p>
+        <p>ويحرص القسم أيضاً على دراسة اللغات الأجنبية؛ الإنجليزية كلغة أساسية مع لغة ثانية كالفرنسية أو الإيطالية أو الألمانية، مما يتيح فرصاً أوسع في العمل والتواصل مع السائحين.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="new-students-section" id="new-students">
+    <div class="section-banner-wrap">
+      <div class="section-banner-bg ns-bg"></div>
+      <div class="section-banner-overlay"></div>
+      <div class="section-banner-text">
+        <p class="eyebrow-light">كلية الآداب — للطلاب الجدد</p>
+        <h2 class="banner-title">للطلاب الجدد</h2>
+        <p class="banner-sub">كل ما تحتاج معرفته قبل وبعد بداية رحلتك في قسم الإرشاد السياحي</p>
+      </div>
+    </div>
+
+    <div class="ns-languages-block reveal">
+      <div class="block-header text-center">
+        <p class="eyebrow-light">اللغات</p>
+        <h3 class="block-title no-border">اللغات الأجنبية في القسم</h3>
+        <p class="block-sub">اللغات ميزتك التنافسية الأكبر — القسم يُعدّك للتواصل مع السياح من كل أنحاء العالم.</p>
+      </div>
+      <div class="languages-grid">
+        <div class="lang-card">
+          <div class="lang-header">
+            <h4>اللغة الإنجليزية</h4>
+            <span class="lang-badge required">إلزامية</span>
+          </div>
+          <p>اللغة الأساسية التي تُدرّس بها معظم المواد — تصل فيها لمستوى احترافي متقدم.</p>
+        </div>
+        <div class="lang-card">
+          <div class="lang-header">
+            <h4>الفرنسية</h4>
+            <span class="lang-badge optional">اختيارية</span>
+          </div>
+          <p>من أكثر اللغات طلبًا في السياحة المصرية — تفتح أمامك سوقًا سياحيًا ضخمًا.</p>
+        </div>
+        <div class="lang-card">
+          <div class="lang-header">
+            <h4>الألمانية</h4>
+            <span class="lang-badge optional">اختيارية</span>
+          </div>
+          <p>السياح الألمان من أكثر الجنسيات زيارةً لمصر — ميزة تنافسية قوية.</p>
+        </div>
+        <div class="lang-card">
+          <div class="lang-header">
+            <h4>الإسبانية أو الإيطالية</h4>
+            <span class="lang-badge optional">اختيارية</span>
+          </div>
+          <p>خيارات إضافية تمنحك مرونة أكبر في التعامل مع السياح الأوروبيين.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ns-skills-block reveal">
+      <div class="block-header text-center">
+        <p class="eyebrow-light">ما ستكتسبه</p>
+        <h3 class="block-title no-border">المهارات التي يبنيها القسم</h3>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-num">01</div>
+          <div class="skill-content">
+            <h4>مهارات التواصل — Communication Skills</h4>
+            <p>القدرة على التواصل الفعال مع السياح من مختلف الجنسيات والثقافات بأسلوب واضح ومؤثر.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-num">02</div>
+          <div class="skill-content">
+            <h4>الحديث أمام الجمهور — Public Speaking</h4>
+            <p>الثقة بالنفس والقدرة على التحدث أمام مجموعات كبيرة بأسلوب شيق وجذاب.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-num">03</div>
+          <div class="skill-content">
+            <h4>القيادة — Leadership</h4>
+            <p>إدارة المجموعات السياحية وتوجيهها باحترافية وتحمّل المسؤولية في المواقف المختلفة.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-num">04</div>
+          <div class="skill-content">
+            <h4>حل المشكلات — Problem Solving</h4>
+            <p>التعامل بهدوء وذكاء مع المواقف الطارئة وإيجاد حلول سريعة تضمن راحة السائح.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-num">05</div>
+          <div class="skill-content">
+            <h4>التعامل مع السائحين</h4>
+            <p>فهم احتياجات السائح وتوقعاته، وتقديم تجربة سياحية لا تُنسى تعكس صورة مشرقة لمصر.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-num">06</div>
+          <div class="skill-content">
+            <h4>المعرفة التاريخية والثقافية</h4>
+            <p>خلفية ثقافية عميقة عن حضارات مصر عبر كل العصور تجعلك مرجعاً موثوقاً أمام السياح.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="curriculum-detailed-block reveal" id="curriculum-detailed">
+      <div class="block-header text-center">
+        <p class="eyebrow-light">السنوات الدراسية</p>
+        <h2 class="banner-title no-border" style="font-size: 2.5rem; margin-bottom: 2rem;">المواد خلال أربع سنوات</h2>
+      </div>
+      
+      <div class="curr-detailed-grid">
+        <div class="curr-year-card">
+          <div class="curr-year-header">
+            <h3>السنة الأولى <span>٠١</span></h3>
+            <p>سنة التأسيس — تبني فيها قاعدتك المعرفية في التاريخ والحضارة المصرية واللغات.</p>
+          </div>
+          <div class="curr-terms">
+            <div class="curr-term">
+              <h4>الترم الأول</h4>
+              <ul>
+                <li>تاريخ الفن المصري</li>
+                <li>البيئة المصرية</li>
+                <li>اللغة الأجنبية الأولى (الإنجليزية)</li>
+                <li>جغرافيا العالم السياحي</li>
+              </ul>
+            </div>
+            <div class="curr-term">
+              <h4>الترم الثاني</h4>
+              <ul>
+                <li>مدخل إلى علم السياحة</li>
+                <li>آثار مصر الفرعونية</li>
+                <li>لغة أجنبية ثانية</li>
+                <li>اللغة المصرية القديمة</li>
+                <li>حضارة إسلامية</li>
+                <li>تاريخ الأدب المصري</li>
+                <li>تاريخ مصر الفرعونية</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="curr-year-card">
+          <div class="curr-year-header">
+            <h3>السنة الثانية <span>٠٢</span></h3>
+            <p>تعمق في الحضارات المختلفة وتبدأ تتعرف على المواقع الأثرية بشكل أوسع.</p>
+          </div>
+          <div class="curr-terms">
+            <div class="curr-term">
+              <h4>الترم الأول</h4>
+              <ul>
+                <li>المجتمع المصري عبر التاريخ</li>
+                <li>اللغة الأجنبية الأولى</li>
+                <li>جغرافية مصر السياحية</li>
+                <li>علاقات عامة</li>
+                <li>إرشاد سياحي مصري</li>
+                <li>إرشاد سياحي إسلامي</li>
+              </ul>
+            </div>
+            <div class="curr-term">
+              <h4>الترم الثاني</h4>
+              <ul>
+                <li>لغة مصرية قديمة</li>
+                <li>فن المتحف</li>
+                <li>آثار مصر الفرعونية</li>
+                <li>لغة أجنبية ثانية</li>
+                <li>تاريخ مصر الفرعونية</li>
+                <li>البيئة المصرية</li>
+                <li>ديانة مصرية قديمة</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="curr-year-card">
+          <div class="curr-year-header">
+            <h3>السنة الثالثة <span>٠٣</span></h3>
+            <p>دراسة الحضارات اليونانية والرومانية والإسلامية مع التعمق في الإرشاد السياحي.</p>
+          </div>
+          <div class="curr-terms">
+            <div class="curr-term">
+              <h4>الترم الأول</h4>
+              <ul>
+                <li>تاريخ مصر يوناني وروماني</li>
+                <li>اللغة الأجنبية الأولى</li>
+                <li>قضايا سياسية واقتصادية معاصرة</li>
+                <li>تاريخ مصر الإسلامي</li>
+                <li>إرشاد سياحي مصري</li>
+                <li>إرشاد سياحي إسلامي</li>
+              </ul>
+            </div>
+            <div class="curr-term">
+              <h4>الترم الثاني</h4>
+              <ul>
+                <li>آثار مصر يوناني وروماني</li>
+                <li>تشريعات سياحية</li>
+                <li>آثار وفنون مصر الإسلامية</li>
+                <li>لغة أجنبية ثانية</li>
+                <li>آثار مصر الفرعونية</li>
+                <li>تاريخ مصر الحديثة</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="curr-year-card">
+          <div class="curr-year-header">
+            <h3>السنة الرابعة <span>٠٤</span></h3>
+            <p>السنة الختامية — تجمع فيها كل ما تعلمته وتتأهل لسوق العمل.</p>
+          </div>
+          <div class="curr-terms">
+            <div class="curr-term">
+              <h4>الترم الأول</h4>
+              <ul>
+                <li>تاريخ مصر الإسلامية</li>
+                <li>اللغة الأجنبية الأولى (الإنجليزية)</li>
+                <li>علم النفس السياحي</li>
+                <li>جغرافية بشرية</li>
+                <li>إرشاد سياحي مصري</li>
+                <li>إرشاد سياحي إسلامي</li>
+                <li>إرشاد سياحي قبطي</li>
+              </ul>
+            </div>
+            <div class="curr-term">
+              <h4>الترم الثاني</h4>
+              <ul>
+                <li>آثار وفنون مصر الإسلامية</li>
+                <li>التاريخ المعاصر</li>
+                <li>آثار مصر المسيحية</li>
+                <li>لغة أجنبية ثانية</li>
+                <li>سلع سياحية</li>
+                <li>حضارة مصر القديمة</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="civs-adv-block reveal">
+      <div class="block-header text-center">
+        <p class="eyebrow-light">الحضارات</p>
+        <h2 class="banner-title no-border" style="font-size: 2.5rem; margin-bottom: 1rem;">حضارات مصر عبر العصور</h2>
+        <p class="block-sub">ستدرس مصر من كل زواياها — من أقدم حضاراتها حتى تاريخها الحديث.</p>
+      </div>
+      
+      <div class="civs-adv-grid">
+        <div class="civ-adv-card">
+          <div class="civ-adv-img">
+            <span class="civ-adv-badge">من ٣١٠٠ ق.م حتى ٣٣٢ ق.م</span>
+            <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=600&q=80" alt="الحضارة المصرية القديمة" loading="lazy"/>
+          </div>
+          <div class="civ-adv-body">
+            <h3>الحضارة المصرية القديمة</h3>
+            <p>الفراعنة، المعابد، المقابر، الهيروغليفية، وأسرار الحضارة الأعرق في التاريخ.</p>
+          </div>
+        </div>
+
+        <div class="civ-adv-card">
+          <div class="civ-adv-img">
+            <span class="civ-adv-badge">من ٣٣٢ ق.م حتى ٦٤١ م</span>
+            <img src="https://i.postimg.cc/SNQqqmKq/Whats-App-Image-2026-06-16-at-7-15-35-AM.jpg" alt="العصر اليوناني الروماني" loading="lazy"/>
+          </div>
+          <div class="civ-adv-body">
+            <h3>العصر اليوناني الروماني</h3>
+            <p>الإسكندرية، المكتبة، المعابد اليونانية، والمزج بين الحضارتين المصرية واليونانية.</p>
+          </div>
+        </div>
+
+        <div class="civ-adv-card">
+          <div class="civ-adv-img">
+            <span class="civ-adv-badge">من ٦٤١ م حتى اليوم</span>
+            <img src="https://i.postimg.cc/MTY4rjVR/Whats-App-Image-2026-06-16-at-6-26-49-AM-(1).jpg" alt="الحضارة الإسلامية" loading="lazy"/>
+          </div>
+          <div class="civ-adv-body">
+            <h3>الحضارة الإسلامية</h3>
+            <p>القاهرة الفاطمية، المساجد، القلاع، والعمارة الإسلامية الفريدة في مصر.</p>
+          </div>
+        </div>
+
+        <div class="civ-adv-card">
+          <div class="civ-adv-img">
+            <span class="civ-adv-badge">من القرن الأول الميلادي</span>
+            <img src="https://i.postimg.cc/PJRSBbxb/Whats-App-Image-2026-06-16-at-7-25-58-AM.jpg" alt="التراث القبطي" loading="lazy"/>
+          </div>
+          <div class="civ-adv-body">
+            <h3>التراث القبطي</h3>
+            <p>الكنائس، الأديرة، الفن القبطي، ودور مصر في نشأة المسيحية الأولى.</p>
+          </div>
+        </div>
+
+        <div class="civ-adv-card">
+          <div class="civ-adv-img">
+            <span class="civ-adv-badge">من القرن التاسع عشر حتى اليوم</span>
+            <img src="https://i.postimg.cc/zv6kdJtT/Whats-App-Image-2026-06-16-at-6-27-06-AM-(2).jpg" alt="العصر الحديث والمعاصر" loading="lazy"/>
+          </div>
+          <div class="civ-adv-body">
+            <h3>العصر الحديث والمعاصر</h3>
+            <p>مصر الحديثة — من الحملة الفرنسية والنهضة المصرية حتى ثورة يوليو والتاريخ المعاصر.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="training-section" id="training">
+    <div class="section-banner-wrap">
+      <div class="section-banner-bg training-bg"></div>
+      <div class="section-banner-overlay"></div>
+      <div class="section-banner-text">
+        <h2 class="banner-title">التدريبات العملية</h2>
+        <p class="banner-sub">تدريبات متنوعة تمنحك الخبرة الحقيقية قبل التخرج</p>
+      </div>
+    </div>
+    
+    <div class="training-body">
+      <div class="training-adv-grid">
+        
+        <div class="t-card-adv reveal">
+          <div class="t-card-adv-img">
+            <img src="https://i.postimg.cc/6Qbv50kh/Whats-App-Image-2026-06-16-at-6-27-07-AM-(1).jpg" alt="المتاحف المصرية" loading="lazy"/>
+          </div>
+          <div class="t-card-adv-body">
+            <span class="t-card-adv-num">01</span>
+            <h3>المتاحف المصرية</h3>
+            <p>تدريب ميداني في المتحف المصري الكبير والمتحف المصري بالتحرير مع مرشدين محترفين.</p>
+          </div>
+        </div>
+
+        <div class="t-card-adv reveal">
+          <div class="t-card-adv-img">
+            <img src="https://i.postimg.cc/1tYc2PRX/Whats-App-Image-2026-06-16-at-6-26-01-AM-(4).jpg" alt="المواقع الأثرية" loading="lazy"/>
+          </div>
+          <div class="t-card-adv-body">
+            <span class="t-card-adv-num">02</span>
+            <h3>المواقع الأثرية</h3>
+            <p>زيارات تدريبية لأهرامات الجيزة، الأقصر، أسوان، وأبو سمبل مع شرح تطبيقي.</p>
+          </div>
+        </div>
+
+        <div class="t-card-adv reveal">
+          <div class="t-card-adv-img">
+            <img src="https://i.postimg.cc/RZRPdkt4/0cc68ac04a8d25c024243a98007d42bc.jpg" alt="شركات السياحة" loading="lazy"/>
+          </div>
+          <div class="t-card-adv-body">
+            <span class="t-card-adv-num">03</span>
+            <h3>شركات السياحة</h3>
+            <p>فرصة للتدريب الصيفي في كبرى شركات السياحة المصرية والعالمية العاملة في مصر.</p>
+          </div>
+        </div>
+
+        <div class="t-card-adv reveal">
+          <div class="t-card-adv-img">
+            <img src="https://images.unsplash.com/photo-1616531770192-6eaea74c2456?w=700&q=80" alt="إرشاد فعلي" loading="lazy"/>
+          </div>
+          <div class="t-card-adv-body">
+            <span class="t-card-adv-num">04</span>
+            <h3>إرشاد فعلي</h3>
+            <p>تجربة إرشاد مجموعات سياحية حقيقية تحت إشراف أساتذة القسم وخبراء الإرشاد.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="careers-section" id="careers">
+    <div class="section-banner-wrap">
+      <div class="section-banner-bg careers-bg"></div>
+      <div class="section-banner-overlay"></div>
+      <div class="section-banner-text">
+        <p class="eyebrow-light">فرص العمل</p>
+        <h2 class="banner-title">أين يعمل خريجو القسم؟</h2>
+        <p class="banner-sub">خريجو قسم الإرشاد السياحي يعملون في مجالات متنوعة داخل مصر وخارجها.</p>
+      </div>
+    </div>
+    <div class="careers-body">
+      <div class="careers-adv-grid">
+        <div class="career-adv-card reveal">
+          <div class="career-adv-img"><img src="https://i.postimg.cc/Hn6xBsTB/Whats-App-Image-2026-06-16-at-6-30-35-AM.jpg" alt="مرشد سياحي"/></div>
+          <div class="career-adv-body">
+            <h3>مرشد سياحي — Tour Guide</h3>
+            <p class="career-adv-desc">أشهر مسارات الخريجين — العمل كمرشد سياحي معتمد في المواقع الأثرية والمتاحف المصرية.</p>
+            <ul class="career-adv-bullets">
+              <li>إرشاد في المواقع الفرعونية كالأهرامات والأقصر</li>
+              <li>إرشاد في المواقع الإسلامية والقبطية بالقاهرة</li>
+              <li>العمل مع شركات السياحة الكبرى محلياً ودولياً</li>
+              <li>إمكانية العمل الحر كمرشد مستقل</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-adv-card reveal">
+          <div class="career-adv-img"><img src="https://i.postimg.cc/sXcDgDGF/8d847369-df65-4cf5-b93b-578d7ebc1496.jpg" alt="مرشد متحفي"/></div>
+          <div class="career-adv-body">
+            <h3>مرشد متحفي — Museum Guide</h3>
+            <p class="career-adv-desc">العمل في المتاحف المصرية الكبرى كالمتحف المصري والمتحف القومي للحضارة.</p>
+            <ul class="career-adv-bullets">
+              <li>مرشد داخل قاعات المتحف</li>
+              <li>موظف في قسم التوثيق والأرشفة</li>
+              <li>منسق برامج التعليم والزيارات المدرسية</li>
+              <li>مساعد في أقسام الترميم والصيانة</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-adv-card reveal">
+          <div class="career-adv-img"><img src="https://i.postimg.cc/KY7m0vNv/8166682dea39f35da7589865fc79cb37.jpg" alt="شركات السياحة والسفر"/></div>
+          <div class="career-adv-body">
+            <h3>شركات السياحة والسفر — Travel Agency</h3>
+            <p class="career-adv-desc">فرص واسعة في شركات السياحة والسفر المحلية والدولية من تنظيم الرحلات إلى إدارتها.</p>
+            <ul class="career-adv-bullets">
+              <li>منسق رحلات سياحية</li>
+              <li>مدير برامج سياحية</li>
+              <li>موظف علاقات عامة مع السياح</li>
+              <li>مستشار سياحي في وكالات السفر</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-adv-card reveal">
+          <div class="career-adv-img"><img src="https://i.postimg.cc/852QG2tF/3be4ed06759480f59ace96c4c5cf0ae3.jpg" alt="موظف طيران وسياحة"/></div>
+          <div class="career-adv-body">
+            <h3>موظف طيران وسياحة — Airline Staff</h3>
+            <p class="career-adv-desc">العمل في شركات الطيران والمطارات في أدوار تخدم السياح وتسهّل تجربتهم.</p>
+            <ul class="career-adv-bullets">
+              <li>موظف استقبال وإرشاد في المطارات</li>
+              <li>منسق خدمات السياح في شركات الطيران</li>
+              <li>مشرف برامج الترفيه السياحي</li>
+              <li>موظف في أقسام السياحة بالمطارات</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-adv-card reveal">
+          <div class="career-adv-img"><img src="https://images.unsplash.com/photo-1616531770192-6eaea74c2456?w=600&q=80" alt="مقدم ثقافي"/></div>
+          <div class="career-adv-body">
+            <h3>مقدم ثقافي — Cultural Presenter</h3>
+            <p class="career-adv-desc">تقديم الحضارة المصرية في الفعاليات الثقافية والمؤتمرات والمراكز الثقافية.</p>
+            <ul class="career-adv-bullets">
+              <li>مقدم برامج ثقافية وتراثية</li>
+              <li>موظف في المراكز الثقافية بالخارج</li>
+              <li>منسق في المنظمات الدولية للسياحة</li>
+              <li>مستشار تراث في المؤتمرات</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-adv-card reveal">
+          <div class="career-adv-img"><img src="https://i.postimg.cc/44VjtFWt/04f1dd6e28255bf94b98629d2ca07713.jpg" alt="التدريس والأكاديميا"/></div>
+          <div class="career-adv-body">
+            <h3>التدريس والأكاديميا</h3>
+            <p class="career-adv-desc">لمن يرغب في مواصلة مسيرته الأكاديمية بالتدريس في الجامعات أو البحث العلمي.</p>
+            <ul class="career-adv-bullets">
+              <li>مدرس مساعد في أقسام الإرشاد</li>
+              <li>باحث في مجال الآثار والحضارة</li>
+              <li>مؤلف ومحرر في المجلات الأثرية</li>
+              <li>مواصلة الدراسات العليا</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sites-section" id="sites">
+    <div class="section-banner-wrap">
+      <div class="section-banner-bg sites-bg"></div>
+      <div class="section-banner-overlay"></div>
+      <div class="section-banner-text">
+        <p class="eyebrow-light">للطلاب الحاليين</p>
+        <h2 class="banner-title">مواقع أثرية للدراسة</h2>
+        <p class="banner-sub">معلومات تفصيلية عن أهم المواقع التي ستدرسها</p>
+      </div>
+    </div>
+
+    <div class="sites-body">
+      <div class="sites-search-wrap">
+        <div class="sites-search">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="siteSearch" placeholder="ابحث عن موقع أثري..." oninput="filterSites(this.value)" />
+        </div>
+      </div>
+      <div class="sites-tabs" id="sitesTabs">
+        <button class="tab-btn active" data-site="giza" onclick="showSite('giza', this)">أهرامات الجيزة</button>
+        <button class="tab-btn" data-site="luxor" onclick="showSite('luxor', this)">الأقصر</button>
+        <button class="tab-btn" data-site="aswan" onclick="showSite('aswan', this)">أسوان</button>
+        <button class="tab-btn" data-site="saqqara" onclick="showSite('saqqara', this)">سقارة</button>
+        <button class="tab-btn" data-site="abusimbel" onclick="showSite('abusimbel', this)">أبو سمبل</button>
+        <button class="tab-btn" data-site="hangingchurch" onclick="showSite('hangingchurch', this)">الكنيسة المعلقة</button>
+        <button class="tab-btn" data-site="alazhar" onclick="showSite('alazhar', this)">الجامع الأزهر</button>
+      </div>
+
+      <div class="site-panel active" id="site-giza" data-name="أهرامات الجيزة أبو الهول هرم خوفو">
+        <div class="site-layout">
+          <div class="site-main-img reveal">
+            <img src="https://i.postimg.cc/LsJzPwBr/67c5dace8a75f2dc82c9c7d3ad542c77.jpg" alt="أهرامات الجيزة" loading="lazy"/>
+            <div class="site-main-overlay"><span class="site-era-badge">عصر الدولة القديمة · ٢٥٠٠ ق.م</span></div>
+          </div>
+          <div class="site-info reveal">
+            <h3>أهرامات الجيزة والأبو الهول</h3>
+            <p>تُعدّ أهرامات الجيزة من أعظم عجائب الدنيا السبع الباقية حتى اليوم، بُنيت كمقابر للفراعنة خلال عصر الدولة القديمة. يتكون المجمع من ثلاثة أهرام رئيسية: هرم خوفو (الأكبر)، هرم خفرع، وهرم منقرع، إلى جانب أبو الهول الشهير.</p>
+            <div class="quick-facts">
+              <h4 class="qf-title">Quick Facts</h4>
+              <div class="qf-grid">
+                <div class="qf-item"><span class="qf-key">الموقع</span><span class="qf-val">محافظة الجيزة</span></div>
+                <div class="qf-item"><span class="qf-key">المنشئ</span><span class="qf-val">الملك خوفو وخلفاؤه</span></div>
+                <div class="qf-item"><span class="qf-key">الارتفاع</span><span class="qf-val">١٤٦.٥ م (خوفو)</span></div>
+                <div class="qf-item"><span class="qf-key">التصنيف</span><span class="qf-val">تراث عالمي UNESCO</span></div>
+              </div>
+            </div>
+            <div class="site-tips">
+              <h4>💡 نصائح للمرشد</h4>
+              <ul>
+                <li>ابدأ الجولة من أعلى نقطة للحصول على أفضل زاوية</li>
+                <li>اشرح نظريات بناء الأهرام بأسلوب شيّق وتفاعلي</li>
+                <li>أفضل وقت: الصباح الباكر أو غروب الشمس</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-panel" id="site-luxor" data-name="الأقصر الكرنك حتشبسوت وادي الملوك طيبة">
+        <div class="site-layout">
+          <div class="site-main-img reveal">
+            <img src="https://i.postimg.cc/QdT7x18K/Whats-App-Image-2026-06-16-at-6-35-30-AM.jpg" alt="الأقصر" loading="lazy"/>
+            <div class="site-main-overlay">
+              <span class="site-era-badge">عصر الدولة الحديثة · ١٥٠٠ ق.م</span>
+            </div>
+          </div>
+          <div class="site-info reveal">
+            <h3>مدينة الأقصر – طيبة القديمة</h3>
+            <p>كانت الأقصر عاصمة مصر الفرعونية باسم "طيبة" وتضم أضخم مجمع معبدي في العالم. تنقسم إلى الضفة الشرقية (معابد الأحياء: الكرنك والأقصر) والضفة الغربية (مدينة الأموات: وادي الملوك وحتشبسوت).</p>
+            <div class="quick-facts">
+              <h4 class="qf-title">Quick Facts</h4>
+              <div class="qf-grid">
+                <div class="qf-item"><span class="qf-key">الموقع</span><span class="qf-val">محافظة الأقصر</span></div>
+                <div class="qf-item"><span class="qf-key">أبرز المعالم</span><span class="qf-val">الكرنك، وادي الملوك</span></div>
+                <div class="qf-item"><span class="qf-key">المساحة</span><span class="qf-val">أكبر متحف مفتوح عالمياً</span></div>
+                <div class="qf-item"><span class="qf-key">التصنيف</span><span class="qf-val">تراث عالمي UNESCO</span></div>
+              </div>
+            </div>
+            <div class="site-tips">
+              <h4>💡 نصائح للمرشد</h4>
+              <ul>
+                <li>خصص يوماً كاملاً للضفة الغربية ويوماً للشرقية</li>
+                <li>ركّز على قصص الفراعنة المدفونين في وادي الملوك</li>
+                <li>استخدم الخرائط التفاعلية لشرح التخطيط المعماري</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-panel" id="site-aswan" data-name="أسوان فيلة النوبة السد العالي">
+        <div class="site-layout">
+          <div class="site-main-img reveal">
+            <img src="https://i.postimg.cc/xj6Ms9pQ/Whats-App-Image-2026-06-16-at-6-35-30-AM-(1).jpg" alt="أسوان" loading="lazy"/>
+            <div class="site-main-overlay">
+              <span class="site-era-badge">العصر البطلمي والروماني</span>
+            </div>
+          </div>
+          <div class="site-info reveal">
+            <h3>أسوان – بوابة النوبة</h3>
+            <p>أسوان مدينة حدودية تاريخية تقع عند الشلال الأول للنيل، وكانت بوابة مصر نحو أفريقيا. تشتهر بجزيرة فيلة ومعابدها المنقوشة بالنقوش البطلمية الجميلة، كما تضم السد العالي التاريخي.</p>
+            <div class="quick-facts">
+              <h4 class="qf-title">Quick Facts</h4>
+              <div class="qf-grid">
+                <div class="qf-item"><span class="qf-key">الموقع</span><span class="qf-val">محافظة أسوان</span></div>
+                <div class="qf-item"><span class="qf-key">أبرز المعالم</span><span class="qf-val">معبد فيلة، السد العالي</span></div>
+                <div class="qf-item"><span class="qf-key">التميز</span><span class="qf-val">يجمع الفرعوني والنوبي</span></div>
+                <div class="qf-item"><span class="qf-key">التصنيف</span><span class="qf-val">تراث عالمي UNESCO</span></div>
+              </div>
+            </div>
+            <div class="site-tips">
+              <h4>💡 نصائح للمرشد</h4>
+              <ul>
+                <li>الوصول لمعبد فيلة يتم عبر القارب – تجربة مميزة</li>
+                <li>اشرح قصة نقل المعبد بسبب السد العالي</li>
+                <li>الزيارة الليلية مع عروض الصوت والضوء رائعة</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-panel" id="site-saqqara" data-name="سقارة زوسر إمحوتب مدينة الأموات">
+        <div class="site-layout">
+          <div class="site-main-img reveal">
+            <img src="https://i.postimg.cc/wBFj6jmz/8cee5a90-95bb-47c1-9296-cf3730967abc.jpg" alt="سقارة" loading="lazy"/>
+            <div class="site-main-overlay">
+              <span class="site-era-badge">عصر الدولة القديمة · ٢٦٠٠ ق.م</span>
+            </div>
+          </div>
+          <div class="site-info reveal">
+            <h3>سقارة – مدينة الأموات</h3>
+            <p>سقارة هي أقدم مجمع جنائزي في العالم وتضم هرم زوسر المدرج، أول هرم في التاريخ، الذي صممه العبقري إمحوتب. تمتد على مساحة ٧ كيلومترات وتضم مقابر من مختلف العصور.</p>
+            <div class="quick-facts">
+              <h4 class="qf-title">Quick Facts</h4>
+              <div class="qf-grid">
+                <div class="qf-item"><span class="qf-key">الموقع</span><span class="qf-val">٣٠ كم جنوب القاهرة</span></div>
+                <div class="qf-item"><span class="qf-key">أبرز المعالم</span><span class="qf-val">هرم زوسر، سيرابيوم</span></div>
+                <div class="qf-item"><span class="qf-key">الأهمية</span><span class="qf-val">أول استخدام للحجر في البناء</span></div>
+                <div class="qf-item"><span class="qf-key">الاكتشافات</span><span class="qf-val">لا تزال مستمرة حتى اليوم</span></div>
+              </div>
+            </div>
+            <div class="site-tips">
+              <h4>💡 نصائح للمرشد</h4>
+              <ul>
+                <li>ابدأ بهرم زوسر لتوضيح تطور البناء الهرمي</li>
+                <li>مقابر التي تحتوي على نقوش ملونة بديعة</li>
+                <li>اربط الزيارة بمنف العاصمة القديمة القريبة</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-panel" id="site-abusimbel" data-name="أبو سمبل رمسيس الثاني نفرتاري">
+        <div class="site-layout">
+          <div class="site-main-img reveal">
+            <img src="https://i.postimg.cc/0Q8Kf4ps/Whats-App-Image-2026-06-16-at-6-26-01-AM-(5).jpg" alt="أبو سمبل" loading="lazy"/>
+            <div class="site-main-overlay">
+              <span class="site-era-badge">عصر الدولة الحديثة · ١٢٤٤ ق.م</span>
+            </div>
+          </div>
+          <div class="site-info reveal">
+            <h3>أبو سمبل – معابد رمسيس الثاني</h3>
+            <p>نُحتت معابد أبو سمبل في قلب الصخر بأمر من رمسيس الثاني. يتميز بظاهرة فريدة في العالم: شعاع الشمس يضيء وجه التمثال مرتين في السنة فقط، في ٢٢ فبراير و٢٢ أكتوبر.</p>
+            <div class="quick-facts">
+              <h4 class="qf-title">Quick Facts</h4>
+              <div class="qf-grid">
+                <div class="qf-item"><span class="qf-key">الموقع</span><span class="qf-val">٢٨٠ كم جنوب أسوان</span></div>
+                <div class="qf-item"><span class="qf-key">المنشئ</span><span class="qf-val">رمسيس الثاني</span></div>
+                <div class="qf-item"><span class="qf-key">الظاهرة الشمسية</span><span class="qf-val">٢٢ فبراير و٢٢ أكتوبر</span></div>
+                <div class="qf-item"><span class="qf-key">التصنيف</span><span class="qf-val">تراث عالمي UNESCO</span></div>
+              </div>
+            </div>
+            <div class="site-tips">
+              <h4>💡 نصائح للمرشد</h4>
+              <ul>
+                <li>اشرح ملحمة نقل المعبد كاملاً بمساعدة UNESCO</li>
+                <li>ظاهرة إضاءة الشمس تستقطب آلاف السياح سنوياً</li>
+                <li>المعبد الصغير المجاور مخصص للملكة نفرتاري</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-panel" id="site-hangingchurch" data-name="الكنيسة المعلقة مجمع الأديان مصر القديمة القبطية">
+        <div class="site-layout">
+          <div class="site-main-img reveal">
+            <img src="https://i.postimg.cc/nLKQqx9K/Whats-App-Image-2026-06-16-at-6-26-28-AM-(1).jpg" alt="الكنيسة المعلقة" loading="lazy"/>
+            <div class="site-main-overlay">
+              <span class="site-era-badge">العصر القبطي · أواخر القرن الرابع</span>
+            </div>
+          </div>
+          <div class="site-info reveal">
+            <h3>الكنيسة المعلقة</h3>
+            <p>تُعد الكنيسة المعلقة من أقدم الكنائس في مصر، وسُميت بالمعلقة لأنها بُنيت على برجين من الأبراج القديمة للحصن الروماني (حصن بابليون). تعتبر من أهم المزارات في مجمع الأديان بمصر القديمة.</p>
+            <div class="quick-facts">
+              <h4 class="qf-title">Quick Facts</h4>
+              <div class="qf-grid">
+                <div class="qf-item"><span class="qf-key">الموقع</span><span class="qf-val">مصر القديمة (مجمع الأديان)</span></div>
+                <div class="qf-item"><span class="qf-key">المنشئ</span><span class="qf-val">أواخر القرن الرابع الميلادي</span></div>
+                <div class="qf-item"><span class="qf-key">الأهمية</span><span class="qf-val">مقر البابوية قديماً</span></div>
+                <div class="qf-item"><span class="qf-key">التصنيف</span><span class="qf-val">أثر قبطي تاريخي</span></div>
+              </div>
+            </div>
+            <div class="site-tips">
+              <h4>💡 نصائح للمرشد</h4>
+              <ul>
+                <li>التركيز على قصة لجوء العائلة المقدسة لمصر</li>
+                <li>شرح العمارة البازيليكية والأيقونات الخشبية النادرة</li>
+                <li>الربط السردي بينها وبين المعبد اليهودي وجامع عمرو بن العاص المجاورين</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-panel" id="site-alazhar" data-name="الجامع الأزهر القاهرة الفاطمية الإسلامية">
+        <div class="site-layout">
+          <div class="site-main-img reveal">
+            <img src="https://i.postimg.cc/rpYz1pFJ/7afed0bc-85e5-44da-aec5-890f6ad29bbc.jpg" alt="الجامع الأزهر" loading="lazy"/>
+            <div class="site-main-overlay">
+              <span class="site-era-badge">العصر الفاطمي · ٩٧٢ م</span>
+            </div>
+          </div>
+          <div class="site-info reveal">
+            <h3>الجامع الأزهر</h3>
+            <p>من أهم المساجد في مصر وأشهر منبر إسلامي في العالم. بناه جوهر الصقلي بأمر من الخليفة المعز لدين الله الفاطمي. يمثل تحفة معمارية تطورت مآذنها وعمارتها عبر العصور الفاطمية والمملوكية والعثمانية.</p>
+            <div class="quick-facts">
+              <h4 class="qf-title">Quick Facts</h4>
+              <div class="qf-grid">
+                <div class="qf-item"><span class="qf-key">الموقع</span><span class="qf-val">الدرب الأحمر، القاهرة</span></div>
+                <div class="qf-item"><span class="qf-key">المنشئ</span><span class="qf-val">جوهر الصقلي</span></div>
+                <div class="qf-item"><span class="qf-key">الأهمية</span><span class="qf-val">أول جامع أنشئ في القاهرة</span></div>
+                <div class="qf-item"><span class="qf-key">العمارة</span><span class="qf-val">٥ مآذن من عصور مختلفة</span></div>
+              </div>
+            </div>
+            <div class="site-tips">
+              <h4>💡 نصائح للمرشد</h4>
+              <ul>
+                <li>شرح تطور العمارة الإسلامية من خلال المدارس الملحقة والمآذن</li>
+                <li>إبراز دوره كأقدم جامعة ومنارة علمية مستمرة حتى اليوم</li>
+                <li>احترام القواعد الخاصة بالزيارة واختيار الأوقات غير المخصصة للصلاة</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-ar">إرشاد سياحي</div>
+          <div class="logo-sub">كلية الآداب</div>
+          <p class="footer-tagline">بوابتك إلى عالم التراث المصري والإرشاد الاحترافي</p>
+        </div>
+        <div class="footer-links-group">
+          <h5>روابط سريعة</h5>
+          <ul>
+            <li><a href="#hero">الرئيسية</a></li>
+            <li><a href="#about">عن القسم</a></li>
+            <li><a href="#new-students">الطلاب الجدد</a></li>
+            <li><a href="#sites">الطلاب الحاليون</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h5>أقسام الموقع</h5>
+          <ul>
+            <li><a href="#curriculum-detailed">المنهج الدراسي</a></li>
+            <li><a href="#training">التدريبات</a></li>
+            <li><a href="#careers">مسارات العمل</a></li>
+            <li><a href="#sites">المواقع الأثرية</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h5>تواصل معنا</h5>
+          <div class="contact-items">
+            <span>📍 كلية الآداب، جامعة عين شمس</span>
+            <span>📧 habibahamdy911@gmail.com</span>
+            <span>من اعمال الطالبه حبيبة حمدي عبد السميع - الفرقة الرابعة--2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>©  قسم الإرشاد السياحي · كلية الآداب · جامعة عين شمس</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
